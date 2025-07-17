@@ -1,4 +1,5 @@
-package Classes_Objetos;
+package Classes_Objetos.personagem;
+
 public class Program {
         public static void main(String[] args) {
             PersonagemGame personagem1 = new PersonagemGame();
