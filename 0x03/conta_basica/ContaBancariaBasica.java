@@ -55,7 +55,14 @@ public class ContaBancariaBasica {
     }
 
     public void aplicarAtualizacaoMensal() {
+        double juros = 0.0;
+        if (saldo >= 0) {
+            double taxaMensal = taxaJurosAnual / 12.0 / 100.0;
+            juros = saldo * taxaMensal;
+            juros = Math.round(juros * 100.0) / 100.0;
+        }
         saldo -= calcularTarifaMensal();
-        saldo += calcularJurosMensal();
+        saldo += juros;
+        saldo = Math.round(saldo * 100.0) / 100.0;
     }
 }
