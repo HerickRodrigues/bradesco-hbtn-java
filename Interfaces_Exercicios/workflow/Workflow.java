@@ -1,9 +1,7 @@
 
-package Interfaces_Exercicios.workflow;
 
 import java.util.ArrayList;
 import java.util.List;
-import Interfaces_Exercicios.workflow.atividades.Atividade;
 
 public class Workflow {
     private List<Atividade> atividades = new ArrayList<>();

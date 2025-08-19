@@ -1,7 +1,5 @@
 
-package Interfaces_Exercicios.workflow;
 
-import Interfaces_Exercicios.workflow.atividades.*;
 
 public class Program {
     public static void main(String[] args) {
