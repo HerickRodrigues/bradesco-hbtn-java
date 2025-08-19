@@ -1,5 +1,5 @@
 
-import provedores.Frete;
+import Interfaces_Exercicios.resumo_pedido.provedores.Frete;
 
 public class Pedido {
     private int codigo;

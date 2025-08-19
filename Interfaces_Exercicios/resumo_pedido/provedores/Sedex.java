@@ -1,3 +1,4 @@
+package Interfaces_Exercicios.resumo_pedido.provedores;
 
 public class Sedex implements ProvedorFrete {
     @Override
