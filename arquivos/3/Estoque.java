@@ -18,7 +18,7 @@ public class Estoque {
 
     private void carregarProdutos() {
         produtos.clear();
-        try (BufferedReader br = new BufferedReader(new FileReader(arquivoCsv))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(arquivoCsv), "UTF-8"))) {
             String linha;
             while ((linha = br.readLine()) != null) {
                 String[] campos = linha.split(",");
@@ -36,7 +36,7 @@ public class Estoque {
     }
 
     private void salvarProdutos() {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(arquivoCsv))) {
+        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(arquivoCsv), "UTF-8"))) {
             for (Produto p : produtos) {
                 bw.write(p.toCsv());
                 bw.newLine();
