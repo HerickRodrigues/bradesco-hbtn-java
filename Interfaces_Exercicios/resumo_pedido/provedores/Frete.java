@@ -1,4 +1,3 @@
-package Interfaces_Exercicios.resumo_pedido.provedores;
 
 public class Frete {
     private double valor;

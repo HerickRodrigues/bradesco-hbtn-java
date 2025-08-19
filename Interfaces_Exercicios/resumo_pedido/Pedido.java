@@ -1,7 +1,5 @@
 
-package Interfaces_Exercicios.resumo_pedido;
-
-import Interfaces_Exercicios.resumo_pedido.provedores.Frete;
+import provedores.Frete;
 
 public class Pedido {
     private int codigo;

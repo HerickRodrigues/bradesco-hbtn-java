@@ -1,7 +1,5 @@
 
-package Interfaces_Exercicios.resumo_pedido;
-
-import Interfaces_Exercicios.resumo_pedido.provedores.*;
+import provedores.*;
 import java.util.Locale;
 
 public class Program {

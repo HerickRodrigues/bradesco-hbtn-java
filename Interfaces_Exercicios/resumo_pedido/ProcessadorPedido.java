@@ -1,8 +1,6 @@
 
-package Interfaces_Exercicios.resumo_pedido;
-
-import Interfaces_Exercicios.resumo_pedido.provedores.Frete;
-import Interfaces_Exercicios.resumo_pedido.provedores.ProvedorFrete;
+import provedores.Frete;
+import provedores.ProvedorFrete;
 
 public class ProcessadorPedido {
     private ProvedorFrete provedorFrete;
