@@ -18,6 +18,21 @@ public class PessoasArray {
     }
 
     // implementar o método de pesquisaConstante
+        // implementar o método de buscaLinear
+        public void buscaLinear(String nome){
+            boolean encontrado = false;
+            System.out.println("Procurando pelo nome: \"" + nome + "\"");
+            for (int i = 0; i < nomes.length; i++) {
+                System.out.println("Passando pelo indice:" + i);
+                if (nomes[i].equals(nome)) {
+                    System.out.println("Nome pesquisado é " + nome + " que está na posição " + i);
+                    encontrado = true;
+                }
+            }
+            if (!encontrado){
+                throw new IllegalArgumentException("O nome " + nome + " não se encontra no array de nomes");
+            }
+        }
     public void pesquisaTempoConstante(int id) {
         if (id < 0 || id >= nomes.length) {
             throw new IllegalArgumentException("O array de nomes possui :" + nomes.length + " nomes.");
