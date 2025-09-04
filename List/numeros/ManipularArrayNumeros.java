@@ -1,4 +1,3 @@
-package List.numeros;
 import java.util.*;
 
 public class ManipularArrayNumeros {
